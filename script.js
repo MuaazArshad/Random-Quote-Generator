@@ -2,6 +2,7 @@
 
 const quote = document.querySelector('.quote');
 const author = document.querySelector('.author');
+const btn = document.querySelector('.btn');
 
 const loadContent = function () {
 	fetch('https://api.quotable.io/random')
@@ -14,3 +15,4 @@ const loadContent = function () {
 		});
 };
 window.addEventListener('DOMContentLoaded', loadContent);
+btn.addEventListener('click', loadContent);

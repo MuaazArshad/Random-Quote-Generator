@@ -8,7 +8,7 @@
 
 :root {
 	--primary-color: #fc9;
-	--seconary-color: #102a42;
+	--secondary-color: #102a42;
 }
 
 body {
@@ -24,13 +24,14 @@ body {
 
 .container {
 	background-color: #f1f5f8;
-	color: var(--seconary-color);
+	color: var(--secondary-color);
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
 	height: auto;
 	width: 50%;
+	padding: 20px;
 	border-radius: 5px;
 	box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1), 6px 6px 3px rgba(0, 0, 0, 0.2);
 }
@@ -51,4 +52,18 @@ i.fa-quote-left {
 	font-weight: 100;
 	align-self: flex-end;
 	padding: 20px;
+}
+
+.btn {
+	font-size: 20px;
+	padding: 10px 20px;
+	border: 2px solid var(--secondary-color);
+	border-radius: 5px;
+	color: var(--secondary-color);
+	transition: all 0.5s ease;
+}
+
+.btn:hover {
+	background-color: var(--secondary-color);
+	color: #f1f5f8;
 }
